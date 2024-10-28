@@ -26,7 +26,7 @@ class Login extends Component
 
     public function login()
     {
-        $this->validate(); // Use the defined rules for validation
+        // $this->validate(); 
 
         // Attempt to login
         if (auth()->attempt(['email' => $this->email, 'password' => $this->password], $this->remember_me)) {

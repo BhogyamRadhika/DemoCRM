@@ -35,24 +35,80 @@
         </a>
       </li>
       <li class="nav-item {{ Request::segment(1) == 'admin' ? 'active' : '' }}">
-        <a href="/admin/dashboard" class="nav-link">
-          <span class="sidebar-icon"> <svg class="icon icon-xs me-2" fill="currentColor" viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg">
-              <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path>
-              <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path>
-            </svg></span></span>
-          <span class="sidebar-text">Reports</span>
-        </a>
-      </li>
+  <a href="/admin/dashboard" class="nav-link d-flex align-items-center">
+    <span class="sidebar-icon me-2">
+      <svg class="icon icon-xs" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"></path>
+        <path d="M12 2.252A8.014 8.014 0 0117.748 8H12V2.252z"></path>
+      </svg>
+    </span>
+    <span class="sidebar-text">Home</span>
+  </a>
+</li>
       <li class="nav-item {{ Request::segment(1) == 'business_info' ? 'active' : '' }}">
-        <a href="/business_info" class="nav-link">
+        <a href="/business_info" class="nav-link d-flex align-items-center">
           <span class="sidebar-icon"> <svg class="icon icon-xs me-2" fill="none" stroke="currentColor"
               viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6">
               </path>
             </svg>
           </span>
-          <span class="sidebar-text">Busine Info</span>
+          <span class="sidebar-text">Lead Generation</span>
+        </a>
+      </li>
+      <li class="nav-item {{ Request::segment(1) == 'lead_tagging' ? 'active' : '' }}">
+        <a href="/lead_tagging" class="nav-link d-flex align-items-center">
+          <span class="sidebar-icon"> <svg class="icon icon-xs me-2" fill="none" stroke="currentColor"
+              viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6">
+              </path>
+            </svg>
+          </span>
+          <span class="sidebar-text">Lead Tagging</span>
+        </a>
+      </li>
+      <li class="nav-item {{ Request::segment(1) == 'opportunity' ? 'active' : '' }}">
+        <a href="/opportunity" class="nav-link d-flex align-items-center">
+          <span class="sidebar-icon"> <svg class="icon icon-xs me-2" fill="none" stroke="currentColor"
+              viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6">
+              </path>
+            </svg>
+          </span>
+          <span class="sidebar-text">Opportunity</span>
+        </a>
+      </li>
+      <li class="nav-item {{ Request::segment(1) == 'business' ? 'active' : '' }}">
+        <a href="/business" class="nav-link d-flex align-items-center">
+          <span class="sidebar-icon"> <svg class="icon icon-xs me-2" fill="none" stroke="currentColor"
+              viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6">
+              </path>
+            </svg>
+          </span>
+          <span class="sidebar-text">Business</span>
+        </a>
+      </li>
+      <li class="nav-item {{ Request::segment(1) == 'Sales_calls' ? 'active' : '' }}">
+        <a href="/Sales_calls" class="nav-link d-flex align-items-center">
+          <span class="sidebar-icon"> <svg class="icon icon-xs me-2" fill="none" stroke="currentColor"
+              viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6">
+              </path>
+            </svg>
+          </span>
+          <span class="sidebar-text">Sales Calls</span>
+        </a>
+      </li>
+      <li class="nav-item {{ Request::segment(1) == 'Analytics' ? 'active' : '' }}">
+        <a href="/Analytics" class="nav-link d-flex align-items-center">
+          <span class="sidebar-icon"> <svg class="icon icon-xs me-2" fill="none" stroke="currentColor"
+              viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6">
+              </path>
+            </svg>
+          </span>
+          <span class="sidebar-text">Analytics</span>
         </a>
       </li>
       <!-- <li class="nav-item {{ request()->routeIs('reports', 'reports.create', 'reports.edit') ? 'active' : '' }}">
